@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#mensagemRecuperacao {
+    background-color: #ffeb3b;
+    padding: 10px;
+    border: 1px solid #fbc02d;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#mensagemRecuperacao.hidden {
+    display: none;
+}
+
+
+button.excluir {
+    background-color: #f44336;
+    color: white;
+}
+
+button.excluir:hover {
+    background-color: #e53935;
+}
+
+/* ... Estilos existentes ... */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#form {
+    flex: 1;
+}
+
+#barraBusca {
+    flex: 1;
+    margin-top: 420px;
+    margin-right: 600px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#formularioEdicao {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border: 1px solid #00acc1;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+#formularioEdicao.hidden {
+    display: none;
+}
+
+#formularioEdicao form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formularioEdicao label, #formularioEdicao input, #formularioEdicao select {
+    margin-bottom: 10px;
+}
+
+#formularioEdicao button {
+    margin-right: 10px;
+}
+
+
