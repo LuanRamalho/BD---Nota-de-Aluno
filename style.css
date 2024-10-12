@@ -1,71 +1,93 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
 label {
     display: block;
     margin-top: 10px;
+    font-weight: bold;
+    color: #555;
 }
 
 input {
     margin-bottom: 10px;
-    padding: 5px;
-    width: 200px;
+    padding: 8px;
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #00bcd4;
+    outline: none;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px;
+    padding: 12px;
     background-color: #4CAF50;
     color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #45a049;
+    transform: scale(1.05);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
+    color: #333;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #00acc1;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
 }
 
 #mensagemRecuperacao {
     background-color: #ffeb3b;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #fbc02d;
     border-radius: 4px;
     margin-bottom: 20px;
+    color: #856404;
+    font-weight: bold;
 }
 
 #mensagemRecuperacao.hidden {
     display: none;
 }
 
-
 button.excluir {
     background-color: #f44336;
     color: white;
+    border-radius: 4px;
 }
 
 button.excluir:hover {
     background-color: #e53935;
 }
-
-/* ... Estilos existentes ... */
 
 .header-container {
     display: flex;
@@ -83,16 +105,13 @@ button.excluir:hover {
     margin-right: 600px;
 }
 
-button {
-    margin-top: 10px;
-}
-
 #formularioEdicao {
     background-color: #e0f7fa;
-    padding: 20px;
-    border: 1px solid #00acc1;
-    border-radius: 4px;
+    padding: 25px;
+    border: 2px solid #00acc1;
+    border-radius: 6px;
     margin-top: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #formularioEdicao.hidden {
@@ -104,12 +123,27 @@ button {
     flex-direction: column;
 }
 
-#formularioEdicao label, #formularioEdicao input, #formularioEdicao select {
-    margin-bottom: 10px;
+#formularioEdicao label {
+    color: #00796b;
+}
+
+#formularioEdicao input, #formularioEdicao select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 #formularioEdicao button {
     margin-right: 10px;
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-
+#formularioEdicao button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
